@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        
+        body {
+            background-color: #ccc;
+        }
+        
+        .box {
+            position: relative;
+            width: 1000px;
+            height: 1000px;
+            margin: 50px auto;
+            background-color: black;
+            border: 2px solid #ccc;
+        }
+        
+        .snake {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: skyblue;
+        }
+        
+        .food {
+            position: absolute;
+            top: 100px;
+            left: 100px;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: pink;
+        }
+        
+        .body {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: yellow;
+        }
+        
+        .btn {
+            position: fixed;
+            width: 100px;
+            height: 50px;
+            left: 50%;
+            top: 50%;
+            transform: translateX(-50%);
+            font-size: 14px;
+            font-weight: bold;
+            color: #fff;
+            background-color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="body"></div>
+        <div class="body" id="two" style="top:0px;left:50px"></div>
+        <div class="snake"></div>
+        <div class="food"></div>
+    </div>
+    <button class="btn">开始游戏</button>
+</body>
+<script src="index.js"></script>
+
+</html>
